@@ -17,3 +17,21 @@ Before we start you need an Arduino board and the Arduino software.
 - Connect the **5v** on the Arduino to the **+** on the water sensor
 - Connect the **GRND** on the Arduino to the **-** on the water sensor
 - Connect the **A5** on the Arduino to he **s** on the water sensor
+
+### Step 3: Time for the code
+
+```
+void setup(){
+ 
+Serial.begin(9600);
+ 
+}
+ 
+void loop(){
+ 
+Serial.print("Water level Sensor Value:");
+Serial.println(analogRead(A5));
+delay(100);
+ 
+}
+```
