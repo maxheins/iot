@@ -10,9 +10,9 @@ Before we start you need an Arduino board and the Arduino software.
 
 When you have installed the Arduino software look for your **NodeMCU board**.
 
-**Tools** > Board:NodeMCU 1.0 
+**Tools** > **Board:NodeMCU 1.0** 
 
-Thank check if you selected the right **Port**.
+Than check if you selected the right **Port**.
 
 ### Install Adafruit_NeoPixel Library
 We work with the AdaFruit_NeoPixel because controlling NeoPixels from scratch is quite a challange. 
@@ -20,6 +20,7 @@ So they provided us with a library. (The librabry works with most mainstram Ardu
 
 
 Go to **Sketch** --> **Include Library** --> **Manage Libraries...**
+
 In the text input box type in **"NeoPixel"**. Look for **"Adafruit NeoPixel by Adafruit"** and select the latest version by clicking on the popup menu next to the **Install** button. Then click on the **Install** button. After it's installed, you can click the **"close"** button.
 
 #### Step 1: Necessary components
