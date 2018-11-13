@@ -28,11 +28,16 @@ In the text input box type in **"NeoPixel"**. Look for **"Adafruit NeoPixel by A
 
 #### Step 1: The necessary components
 1. Like I said before; the Arduino board
+
+![arduino](https://user-images.githubusercontent.com/45005992/48438021-3c1bff80-e783-11e8-85bb-e624738b2033.png)
+
 2. The water sensor
 
 ![watersensor](https://user-images.githubusercontent.com/45005992/48437673-4e496e00-e782-11e8-8fc0-9b6369bfcfea.png)
 
 3. The LED strip 
+
+
 
 #### Step 2: Connect the components
 ##### Water Sensor:
