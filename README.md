@@ -9,16 +9,25 @@ Before we start you need an Arduino board and the Arduino software.
 - For Windows check this website https://www.arduino.cc/en/main/software
 
 When you have installed the Arduino software look for your **NodeMCU board**.
+
 **Tools** > Board:NodeMCU 1.0 
+
 Thank check if you selected the right **Port**.
 
-### Conncect to Adafruit
+### Now conncect to Adafruit
+First install the Arduino IO libraries;
+- Go to *Sketch* --> *Include Library* --> *Manage Libraries...*
+##### install:
+1. **Adafruit IO Arduino version** 2.1.1 or higher
+2. **Adafruit MQTT version 0.16.1** or higher
+3. **ArduinoHttpClient version** 0.20 or higher
 
 
-#### Step 1: Necessary c to omponents
+#### Step 1: Necessary components
 1. Like I said; the Arduino
 2. 4 wires 
-3. water sensor
+3. The water sensor
+4. The LED strip 
 
 #### Step 2: Connect the components
 - Connect the **5v** on the Arduino to the **+** on the water sensor
