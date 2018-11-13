@@ -110,7 +110,7 @@ So when the WaterValue is lower than **293** we want to change the color to red.
 
 And when the number is **293** it will give the color blue.
 
-(Does your water sensor gives an other value, change it to that number)
+(If your water sensor gives an other value, change it to that number)
 ```
   if (waterValue < 293) {
           colorWipe(strip.Color(0, 0, 255), 0); //color red
