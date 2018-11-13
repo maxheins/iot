@@ -1,8 +1,8 @@
-## Water sensor
+# Water sensor
 
 In this file I will explain how you can check if there is still enough water in the bowl of your pet. When there is enough water we want to give our led strip a blue color, is the bowl empty we want a red color. To control the LED strip we will work with Adafruit_Neopixel library. 
 
-### Installing
+## Installing
 
 Before we start you need an Arduino board and the Arduino software.
 - I used the Arduino 1.8.7 software on Mac OS X 10.8 Mountain Lion or newer
