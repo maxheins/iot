@@ -1,12 +1,12 @@
-## Automatic Pet Feeder with Arduino 
+## Water sensor
 
-We want to build an automatic pet feeder with **Arduino**. In this file I will explain how to check if there is still enough water in the bowl of your pet. When there is enough water we want to give our led strip an blue color, is the bowl empty we want a red color. To control the LED strip we will work with Adafruit_Neopixel library. 
+In this file I will explain how you can check if there is still enough water in the bowl of your pet. When there is enough water we want to give our led strip a blue color, is the bowl empty we want a red color. To control the LED strip we will work with Adafruit_Neopixel library. 
 
 ### Let's start
 
 Before we start you need an Arduino board and the Arduino software.
-- For this code I used the Arduino 1.8.7 on Mac OS X 10.8 Mountain Lion or newer
-- For Windows check this website https://www.arduino.cc/en/main/software
+- I used the Arduino 1.8.7 software on Mac OS X 10.8 Mountain Lion or newer
+- For Windows check there website https://www.arduino.cc/en/main/software
 
 When you have installed the Arduino software look for your **NodeMCU board**.
 
@@ -15,21 +15,23 @@ When you have installed the Arduino software look for your **NodeMCU board**.
 Thank check if you selected the right **Port**.
 
 ### Install Adafruit_NeoPixel Library
+We work with the AdaFruit_NeoPixel because controlling NeoPixels from scratch is quite a challange. 
+So they provided us with a library. (The librabry works with most mainstram Arduino boards; *Uno, Mega, Leonardo, Micro, Adafruit Flora,* etc.
+
+
 Go to **Sketch** --> **Include Library** --> **Manage Libraries...**
 In the text input box type in **"NeoPixel"**. Look for **"Adafruit NeoPixel by Adafruit"** and select the latest version by clicking on the popup menu next to the **Install** button. Then click on the **Install** button. After it's installed, you can click the **"close"** button.
 
-
 #### Step 1: Necessary components
-1. Like I said; the Arduino
-2. 4 wires 
-3. The water sensor
-4. The LED strip 
+1. Like I said before; the Arduino board
+2. The water sensor
+3. The LED strip 
 
 #### Step 2: Connect the components
 ##### Water Sensor:
 - Connect the **5v** on the Arduino to **+** on the water sensor
-- Connect the **GRND** on the Arduino to **-** on the water sensor
-- Connect the **A5** on the Arduino to **s** on the water sensor
+- Connect the **GND** on the Arduino to **-** on the water sensor
+- Connect the **A0** on the Arduino to **s** on the water sensor
 ##### Led Strip:
 - Connect the **GND** on the Arduino to **GND** on the led strip
 - Connect the **D5** on the Arduino to **Do/Din** on the led strip
