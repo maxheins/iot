@@ -41,6 +41,7 @@ In the text input box type in **"NeoPixel"**. Look for **"Adafruit NeoPixel by A
 
 4. Six wires
 
+![wires](https://user-images.githubusercontent.com/45005992/48438829-27406b80-e785-11e8-80bc-1f59be195a8b.png)
 
 
 #### Step 2: Connect the components
