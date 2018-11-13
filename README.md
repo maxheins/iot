@@ -12,7 +12,7 @@ When you have installed the Arduino software look for your **NodeMCU board**.
 
 **Tools** > **Board:NodeMCU 1.0**
 
-Than check if you selected the right **Port**.
+Then check if you selected the right **Port**.
 
 
 ## Install Adafruit_NeoPixel Library
