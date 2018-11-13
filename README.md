@@ -55,27 +55,85 @@ In the text input box type in **"NeoPixel"**. Look for **"Adafruit NeoPixel by A
 - Connect the **3V** on the Arduino to **5V** on the led strip
 
 #### Step 3: Time for the code
+Open a new blank file in Arduino.
 
 First we want to include the header file of NeoPixel.
 ```
 #include <Adafruit_NeoPixel.h>
 ```
 
+Than we want to define the pin of the Arduino who is connected to the **led strip**.
+As you can see that is **D5**.
 
+We count **10**, cause I use a led strip with 10 ligths. (if u use more ligths, change the number)
+
+The pixel type is going to be RGB.
+
+```
+#define PIXEL_PIN     D5
+#define PIXEL_COUNT   10
+#define PIXEL_TYPE    NEO_GRB + NEO_KHZ800
+```
+
+The next line declares a NeoPixel object. We will refer to this by name later to control the strip of pixels. There are three parameters or arguments in the parentheses. These are the one we just defined. 
+
+```
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(PIXEL_COUNT, PIXEL_PIN, PIXEL_TYPE);
+```
+
+Then in the **setup()** function we start the serial connection and call **begin()** to prepare the data pin for the NeoPixel output.
+
+```
+void setup() {
+
+  // start the serial connection
+  Serial.begin(115200);
+  
+  // neopixel init
+  strip.begin();
+  strip.show();
+
+}
+```
+The loop() function does precisely what it's name suggests, and loops consecutively, allowing your program to change and respond. 
+
+Now in the loop() we are connecting the **water sensor** to the code. Which is connected to A0.
+We give it a name; **waterValue**. 
 
 
 ```
-void setup(){
- 
-Serial.begin(9600);
- 
-}
- 
-void loop(){
- 
-Serial.print("Water level Sensor Value:");
-Serial.println(analogRead(A5));
-delay(100);
- 
+void loop() {
+  // sensor aanroepen.
+  int waterValue = analogRead(A0);
+  Serial.println(waterValue);
+  delay(100);
+```
+
+Then we build an **if statement**. When you put your water sensor in a glass of water it will give the value; **293**. 
+So when the WaterValue is lower than 293 we want to change the color to red.
+
+And when the number is 293 it will give the color blue.
+
+(Does your water sensor gives an other value, change it to that number)
+```
+  if (waterValue < 293) {
+          colorWipe(strip.Color(0, 0, 255), 0); //color red
+        } else {
+          colorWipe(strip.Color(255, 0, 0), 0); //color blue
+        }
 }
 ```
+
+And as last the colorWipe. 
+The ColorWipe function paints a color, one pixel at a time, over the length of the strip.  
+
+```
+void colorWipe(uint32_t c, uint8_t wait) {
+  for(uint16_t i=0; i<strip.numPixels(); i++) {
+    strip.setPixelColor(i, c);
+    strip.show();
+    delay(wait);
+  }
+}
+```
+
