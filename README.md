@@ -162,9 +162,9 @@ void loop() {
   delay(100);
 
   if (waterValue < 293) {
-          colorWipe(strip.Color(0, 0, 255), 0); //
+          colorWipe(strip.Color(0, 0, 255), 0); // color red
         } else {
-          colorWipe(strip.Color(255, 0, 0), 0); // 
+          colorWipe(strip.Color(255, 0, 0), 0); // color blue
         }
 }
 
@@ -176,5 +176,5 @@ void colorWipe(uint32_t c, uint8_t wait) {
   }
 }
 ```
-## And that's it
-### written by Maxime Heinsbroek
+## And that's it!
+### © Maxime Heinsbroek
