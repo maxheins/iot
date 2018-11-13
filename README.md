@@ -39,6 +39,9 @@ In the text input box type in **"NeoPixel"**. Look for **"Adafruit NeoPixel by A
 
 ![ml-smdf-rgbw](https://user-images.githubusercontent.com/45005992/48438604-9d909e00-e784-11e8-9a86-a58213be5896.png)
 
+4. Six wires
+
+
 
 #### Step 2: Connect the components
 ##### Water Sensor:
