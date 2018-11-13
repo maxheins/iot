@@ -17,9 +17,9 @@ Thank check if you selected the right **Port**.
 ### Now conncect to Adafruit
 First install the Arduino IO libraries;
 - Go to *Sketch* --> *Include Library* --> *Manage Libraries...*
-##### install:
+#### Install:
 1. **Adafruit IO Arduino version** 2.1.1 or higher
-2. **Adafruit MQTT version 0.16.1** or higher
+2. **Adafruit MQTT version** 0.16.1 or higher
 3. **ArduinoHttpClient version** 0.20 or higher
 
 
@@ -30,9 +30,14 @@ First install the Arduino IO libraries;
 4. The LED strip 
 
 #### Step 2: Connect the components
-- Connect the **5v** on the Arduino to the **+** on the water sensor
-- Connect the **GRND** on the Arduino to the **-** on the water sensor
-- Connect the **A5** on the Arduino to he **s** on the water sensor
+##### Water Sensor:
+- Connect the **5v** on the Arduino to **+** on the water sensor
+- Connect the **GRND** on the Arduino to **-** on the water sensor
+- Connect the **A5** on the Arduino to **s** on the water sensor
+##### Led Strip:
+- Connect the **GND** on the Arduino to **GND** on the led strip
+- Connect the **D5** on the Arduino to **Do/Din** on the led strip
+- Connect the **3V** on the Arduino to **5V** on the led strip
 
 #### Step 3: Time for the code
 
