@@ -10,7 +10,7 @@ Before we start you need an Arduino board and the Arduino software.
 
 When you have installed the Arduino software look for your **NodeMCU board**.
 
-**Tools** > **Board:NodeMCU 1.0** 
+**Tools** --> **Board:NodeMCU 1.0** 
 
 Than check if you selected the right **Port**.
 
