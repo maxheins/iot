@@ -1,4 +1,4 @@
-# Water sensor
+# Water sensor with led strip
 
 In this file I will explain how you can check if there is still enough water in the bowl of your pet. When there is enough water we want to give our led strip a blue color, is the bowl empty we want a red color. To control the LED strip we will work with Adafruit_Neopixel library. 
 
@@ -93,7 +93,7 @@ void setup() {
 }
 ```
 
-Now in the loop() we are connecting the **water sensor** to the code. Which is connected to A0.
+Now in the **loop()** we are connecting the **water sensor** to the code. Which is connected to A0.
 We give it a name; **waterValue**. 
 
 
@@ -106,9 +106,9 @@ void loop() {
 ```
 
 Then we build an **if statement**. When you put your water sensor in a glass of water it will give the value; **293**. 
-So when the WaterValue is lower than 293 we want to change the color to red.
+So when the WaterValue is lower than **293** we want to change the color to red.
 
-And when the number is 293 it will give the color blue.
+And when the number is **293** it will give the color blue.
 
 (Does your water sensor gives an other value, change it to that number)
 ```
@@ -120,7 +120,7 @@ And when the number is 293 it will give the color blue.
 }
 ```
 
-And as last the colorWipe. 
+And as last the **colorWipe**. 
 The ColorWipe function paints a color, one pixel at a time, over the length of the strip.  
 
 ```
