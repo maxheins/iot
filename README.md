@@ -62,12 +62,9 @@ First we want to include the header file of NeoPixel.
 #include <Adafruit_NeoPixel.h>
 ```
 
-Than we want to define the pin of the Arduino who is connected to the **led strip**.
-As you can see that is **D5**.
-
-We count **10**, cause I use a led strip with 10 ligths. (if u use more ligths, change the number)
-
-The pixel type is going to be RGB.
+- Than we want to define the pin of the Arduino who is connected to the **led strip**. As you can see that is **D5**.
+- We count **10**, cause I use a led strip with 10 ligths. (if u use more ligths, change the number)
+- And the pixel type is going to be RGB.
 
 ```
 #define PIXEL_PIN     D5
@@ -75,7 +72,7 @@ The pixel type is going to be RGB.
 #define PIXEL_TYPE    NEO_GRB + NEO_KHZ800
 ```
 
-The next line declares a NeoPixel object. We will refer to this by name later to control the strip of pixels. There are three parameters or arguments in the parentheses. These are the one we just defined. 
+The next line declares a **NeoPixel object**. We will refer to this by name later to control the strip of pixels. There are three parameters or arguments in the parentheses. These are the one we just defined. 
 
 ```
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(PIXEL_COUNT, PIXEL_PIN, PIXEL_TYPE);
@@ -95,7 +92,6 @@ void setup() {
 
 }
 ```
-The loop() function does precisely what it's name suggests, and loops consecutively, allowing your program to change and respond. 
 
 Now in the loop() we are connecting the **water sensor** to the code. Which is connected to A0.
 We give it a name; **waterValue**. 
