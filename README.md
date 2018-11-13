@@ -14,6 +14,7 @@ When you have installed the Arduino software look for your **NodeMCU board**.
 
 Than check if you selected the right **Port**.
 
+
 ### Install Adafruit_NeoPixel Library
 We work with the AdaFruit_NeoPixel because controlling NeoPixels from scratch is quite a challange. 
 So they provided us with a library. (The librabry works with most mainstram Arduino boards; *Uno, Mega, Leonardo, Micro, Adafruit Flora,* etc.
