@@ -1,6 +1,6 @@
 ## Automatic Pet Feeder with Arduino 
 
-We want to build an automatic pet feeder with **Arduino**. In this file I will explain how to check if there is still enough water in the bowl of your pet. When there is enough water we want to give our led strip an blue color, is the bowl empty we want a red color. To control the LED strip we will work with [adafruit.io](https://io.adafruit.com/).
+We want to build an automatic pet feeder with **Arduino**. In this file I will explain how to check if there is still enough water in the bowl of your pet. When there is enough water we want to give our led strip an blue color, is the bowl empty we want a red color. To control the LED strip we will work with Adafruit_Neopixel library. 
 
 ### Let's start
 
@@ -14,13 +14,9 @@ When you have installed the Arduino software look for your **NodeMCU board**.
 
 Thank check if you selected the right **Port**.
 
-### Now conncect to Adafruit
-First install the Arduino IO libraries;
-- Go to *Sketch* --> *Include Library* --> *Manage Libraries...*
-#### Install:
-1. **Adafruit IO Arduino version** 2.1.1 or higher
-2. **Adafruit MQTT version** 0.16.1 or higher
-3. **ArduinoHttpClient version** 0.20 or higher
+### Install Adafruit_NeoPixel Library
+Go to **Sketch** --> **Include Library** --> **Manage Libraries...**
+In the text input box type in **"NeoPixel"**. Look for **"Adafruit NeoPixel by Adafruit"** and select the latest version by clicking on the popup menu next to the **Install** button. Then click on the **Install** button. After it's installed, you can click the **"close"** button.
 
 
 #### Step 1: Necessary components
@@ -40,6 +36,14 @@ First install the Arduino IO libraries;
 - Connect the **3V** on the Arduino to **5V** on the led strip
 
 #### Step 3: Time for the code
+
+First we want to include the header file of NeoPixel.
+```
+#include <Adafruit_NeoPixel.h>
+```
+
+
+
 
 ```
 void setup(){
