@@ -135,7 +135,7 @@ void colorWipe(uint32_t c, uint8_t wait) {
 }
 ```
 
-### Total code
+## Total code
 
 ```
 #include "Adafruit_NeoPixel.h"
