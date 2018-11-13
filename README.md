@@ -122,7 +122,7 @@ And when the number is **293** it needs to give us the color blue.
 }
 ```
 
-And as last the **colorWipe**. 
+And finally the **colorWipe**. 
 The ColorWipe function paints a color, one pixel at a time, over the length of the strip.  
 
 ```
